@@ -1,3 +1,6 @@
+// keep app.js clean
+// move nutrition to "nutrition.js" in "src" directory
+
 const request = require('postman-request');
 
 const url = 'https://api.api-ninjas.com/v1/nutrition?query=';
