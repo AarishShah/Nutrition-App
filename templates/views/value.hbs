@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Food Calorie</title>
+</head>
+<body>
+    <center>
+        <h1> Food Calorie Calculator</h1>
+        <h2>{{food}}</h2>
+         <h2>{{amount}}</h2>
+          <h2>{{calories}}</h2>
+    </center>
+<div class="div1">
+    <form class="form1" action="/search" method="GET">
+        <label for="food">Food Item:</label><br>
+        <input class="food" type="text" name="food" id=""><br><br>
+        <label for="amount">Amount(g):</label><br>
+        <input class="amount"type="text" name="amount" id=""><br><br>
+        <button class="btn1">Submit</button>
+    </form>
+    <script src="index.js"></script>
+</div>
+
+</body>
+</html>
