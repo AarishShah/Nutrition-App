@@ -2,12 +2,13 @@ const router = require('express').Router();
 
 // keep app.js clean ✅
 // move nutrition to "nutrition.js" in "src" directory ✅
+
 router.get('/', (req,res) => {
     res.render('value')
 })
 
 router.get('/search', (req,res) => {
-    
+
     const request = require('postman-request');
     
     const url = 'https://api.api-ninjas.com/v1/nutrition?query=';
@@ -42,6 +43,7 @@ router.get('/search', (req,res) => {
                 else
                 
                     console.log(response.body)
+
                     // res.send(response.body[0])
                     res.render('value',{
                         food:`Food: ${response.body[0].name}`,

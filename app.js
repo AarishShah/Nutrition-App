@@ -1,10 +1,13 @@
 const express = require('express')
 const usersRouter = require('./src/nutrition')
+
 const path = require('path')
+
 
 const app = express()
 app.use(express.static('public'))
 app.use(usersRouter)
+
 
 const viewsPath = path.join(__dirname, './templates/views')
 app.set('views', viewsPath)
