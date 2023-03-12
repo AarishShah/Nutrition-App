@@ -10,6 +10,6 @@ const viewsPath = path.join(__dirname, './templates/views')
 app.set('views', viewsPath)
 app.set('view engine', 'hbs')
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('server is up on port 3000')
 })
